@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 30 17:15:55 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>15 seconds (15984 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.api.JsonPlaceholderTests.getInvalidEndpoint_shouldReturn404()'><b>getInvalidEndpoint_shouldReturn404</b><br>Test class: com.example.api.JsonPlaceholderTests</td>
+<td></td>
+<td>3</td>
+<td>com.example.api.JsonPlaceholderTests@6107227e</td></tr>
+<tr>
+<td title='com.example.api.JsonPlaceholderTests.deletePost_shouldReturn200()'><b>deletePost_shouldReturn200</b><br>Test class: com.example.api.JsonPlaceholderTests</td>
+<td></td>
+<td>1</td>
+<td>com.example.api.JsonPlaceholderTests@6107227e</td></tr>
+<tr>
+<td title='com.example.api.JsonPlaceholderTests.createPost_shouldReturn201_andId()'><b>createPost_shouldReturn201_andId</b><br>Test class: com.example.api.JsonPlaceholderTests</td>
+<td></td>
+<td>1</td>
+<td>com.example.api.JsonPlaceholderTests@6107227e</td></tr>
+<tr>
+<td title='com.example.api.JsonPlaceholderTests.putPost_shouldReturn200_andReplaceFields()'><b>putPost_shouldReturn200_andReplaceFields</b><br>Test class: com.example.api.JsonPlaceholderTests</td>
+<td></td>
+<td>1</td>
+<td>com.example.api.JsonPlaceholderTests@6107227e</td></tr>
+<tr>
+<td title='com.example.api.JsonPlaceholderTests.patchPost_shouldReturn200_andUpdatePartialField()'><b>patchPost_shouldReturn200_andUpdatePartialField</b><br>Test class: com.example.api.JsonPlaceholderTests</td>
+<td></td>
+<td>1</td>
+<td>com.example.api.JsonPlaceholderTests@6107227e</td></tr>
+<tr>
+<td title='com.example.api.JsonPlaceholderTests.getPosts_shouldReturn200_andWithin2s_andMatchSchema()'><b>getPosts_shouldReturn200_andWithin2s_andMatchSchema</b><br>Test class: com.example.api.JsonPlaceholderTests</td>
+<td></td>
+<td>3</td>
+<td>com.example.api.JsonPlaceholderTests@6107227e</td></tr>
+<tr>
+<td title='com.example.api.JsonPlaceholderTests.postWithInvalidContentType_shouldReturn415_orIgnore()'><b>postWithInvalidContentType_shouldReturn415_orIgnore</b><br>Test class: com.example.api.JsonPlaceholderTests</td>
+<td></td>
+<td>1</td>
+<td>com.example.api.JsonPlaceholderTests@6107227e</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-30T17:15:55 IST" name="Surefire suite" finished-at="2025-07-30T17:16:11 IST" duration-ms="15984">
+    <groups>
+    </groups>
+    <test started-at="2025-07-30T17:15:55 IST" name="Surefire test" finished-at="2025-07-30T17:16:11 IST" duration-ms="15984">
+      <class name="com.example.api.JsonPlaceholderTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.api.JsonPlaceholderTests@6107227e]" started-at="2025-07-30T17:15:55 IST" name="setup" finished-at="2025-07-30T17:15:57 IST" duration-ms="2165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getInvalidEndpoint_shouldReturn404()[pri:0, instance:com.example.api.JsonPlaceholderTests@6107227e]" started-at="2025-07-30T17:15:57 IST" name="getInvalidEndpoint_shouldReturn404" finished-at="2025-07-30T17:16:01 IST" duration-ms="3933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInvalidEndpoint_shouldReturn404 -->
+        <test-method signature="getPosts_shouldReturn200_andWithin2s_andMatchSchema()[pri:0, instance:com.example.api.JsonPlaceholderTests@6107227e]" started-at="2025-07-30T17:16:01 IST" name="getPosts_shouldReturn200_andWithin2s_andMatchSchema" finished-at="2025-07-30T17:16:04 IST" duration-ms="3445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPosts_shouldReturn200_andWithin2s_andMatchSchema -->
+        <test-method signature="postWithInvalidContentType_shouldReturn415_orIgnore()[pri:0, instance:com.example.api.JsonPlaceholderTests@6107227e]" started-at="2025-07-30T17:16:04 IST" name="postWithInvalidContentType_shouldReturn415_orIgnore" finished-at="2025-07-30T17:16:05 IST" duration-ms="1052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postWithInvalidContentType_shouldReturn415_orIgnore -->
+        <test-method signature="createPost_shouldReturn201_andId()[pri:0, instance:com.example.api.JsonPlaceholderTests@6107227e]" started-at="2025-07-30T17:16:05 IST" name="createPost_shouldReturn201_andId" finished-at="2025-07-30T17:16:07 IST" depends-on-methods="com.example.api.JsonPlaceholderTests.getPosts_shouldReturn200_andWithin2s_andMatchSchema" duration-ms="1607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPost_shouldReturn201_andId -->
+        <test-method signature="putPost_shouldReturn200_andReplaceFields()[pri:0, instance:com.example.api.JsonPlaceholderTests@6107227e]" started-at="2025-07-30T17:16:07 IST" name="putPost_shouldReturn200_andReplaceFields" finished-at="2025-07-30T17:16:08 IST" depends-on-methods="com.example.api.JsonPlaceholderTests.createPost_shouldReturn201_andId" duration-ms="1284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putPost_shouldReturn200_andReplaceFields -->
+        <test-method signature="patchPost_shouldReturn200_andUpdatePartialField()[pri:0, instance:com.example.api.JsonPlaceholderTests@6107227e]" started-at="2025-07-30T17:16:08 IST" name="patchPost_shouldReturn200_andUpdatePartialField" finished-at="2025-07-30T17:16:09 IST" depends-on-methods="com.example.api.JsonPlaceholderTests.putPost_shouldReturn200_andReplaceFields" duration-ms="1194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patchPost_shouldReturn200_andUpdatePartialField -->
+        <test-method signature="deletePost_shouldReturn200()[pri:0, instance:com.example.api.JsonPlaceholderTests@6107227e]" started-at="2025-07-30T17:16:09 IST" name="deletePost_shouldReturn200" finished-at="2025-07-30T17:16:11 IST" depends-on-methods="com.example.api.JsonPlaceholderTests.patchPost_shouldReturn200_andUpdatePartialField" duration-ms="1129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePost_shouldReturn200 -->
+      </class> <!-- com.example.api.JsonPlaceholderTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
