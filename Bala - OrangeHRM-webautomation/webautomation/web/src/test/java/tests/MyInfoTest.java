@@ -1,0 +1,20 @@
+package tests;
+
+import org.testng.annotations.Test;
+
+import base.BaseTest;
+import pages.LoginPage;
+import pages.MyInfoPage;
+
+
+public class MyInfoTest extends BaseTest {
+
+    @Test
+    public void validateMyInfoSection() {
+        LoginPage login = new LoginPage(driver);
+        MyInfoPage myInfo = new MyInfoPage(driver);
+
+        login.loginAs("Admin", "admin123");
+        myInfo.openMyInfoSection();
+    }
+}
